@@ -9,7 +9,7 @@ Next.js te da la mejor experiencia de desarrollo en React.js con todas las carac
 - Desarrolla APIs con Next.js
 - Renderizar aplicaciones en el servidor, SSR
 
-# Mis notas:
+# <span style="color:green">Mis notas:</span>
 
 ## Instalando NextJS 3/27
 
@@ -38,3 +38,16 @@ _Manuel:_
 Rutas estáticas:
 Next genera un Routing automático solo agradando carpetas o archivos en `pages`. Esto se conoce como _Routing basado en el sistema de archivos._
 Dentro de `pages` creamos un index.js que funcionara como nuestro `Home`.
+
+## Rutas dinámicas 5/27
+
+Las rutas dinámicas reciben un argumento y en base a este crean una ruta.
+Se crean envolviendo el nombre del argumento que recibiremos en []: `[id].js`
+Lo capturamos utilizando el modulo useRouter (`import { useRouter } from "next/router";`).
+Luego destruimos el query:
+<code>const {
+query: { id },
+} = useRouter();</code>
+Ahora podremos utilizar el contenido de la variable que guarda la ruta dinámica.
+
+## #UnderTheHood setup y páginas: optimizaciones ocultas 6/27
