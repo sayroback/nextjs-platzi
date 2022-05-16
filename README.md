@@ -51,3 +51,14 @@ query: { id },
 Ahora podremos utilizar el contenido de la variable que guarda la ruta dinámica.
 
 ## #UnderTheHood setup y páginas: optimizaciones ocultas 6/27
+
+## #UnderTheHood páginas: pre rendering de páginas 7/27
+
+## Enlazando páginas 8/27
+
+Con el modulo `import Link from "next/link";`, podemos generar una navegación sin recarga.
+Envolvemos las etiquetas de enlace con el componente `<Link><a>Enlace</a><Link>`
+
+## #UnderTheHood enlazando páginas: prefetching automático 9/27
+
+En el momento que el usuario hace hover en los enlaces se crea una prefetching.
